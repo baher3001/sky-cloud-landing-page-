@@ -1,0 +1,288 @@
+
+
+
+
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    overflow-x: hidden;
+
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+.container
+{
+    width: 80%;
+    margin: auto;
+}
+
+nav  img
+{
+    max-width: 20%;
+}
+
+
+nav 
+{
+    width: 100%;
+    height: 80px;
+    background:linear-gradient(to right bottom,#2193b0,#6dd5ed);
+
+}
+
+nav .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    height: 100%;
+}
+
+nav img
+{
+    max-width: 60px;
+}
+
+nav .nav-content ul
+{
+    list-style: none;
+    margin-right: 90px;
+}
+
+nav .nav-content ul li
+{
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+nav .nav-content ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+nav .burger
+{
+    display: none;
+}
+section
+{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(to right bottom,#2193b0,#6dd5ed);
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
+    color: #fff;
+    
+}
+
+section .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+section img
+{
+    max-width: 100%;
+}
+
+
+
+.header-conetnt
+{
+    text-align: center;
+
+}
+
+.header-conetnt h2
+{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.header-conetnt p
+{
+    margin-bottom: 20px;
+}
+
+
+section button
+{
+    padding: 10px 25px;
+    background: crimson;
+    color: #fff;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+
+}
+
+ .icons 
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 140px;
+    color: #fff;
+
+    cursor: pointer;
+
+    animation-name: heart;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+
+.icons i
+{
+    font-size: 60px;
+}
+
+
+@keyframes heart {
+    0%
+    {
+        transform: scale(1)
+    }
+
+    100%
+    {
+        transform: scale(1.2);
+    }
+    
+}
+
+
+
+
+
+
+/* media query here start */
+
+@media(max-width:600px) 
+{
+
+    nav ,
+    section   
+    {
+        width: 100% !important;
+    }
+
+    
+    body 
+    {
+        overflow-x: hidden;
+    }
+
+    nav .burger
+{
+    display: block;
+
+    color: #fff;
+    font-size: 21px;
+    cursor: pointer;
+   
+    z-index: 1;
+    transition: all 1s ease-in-out;
+}
+
+.nav-content 
+{
+
+    background:linear-gradient(to right bottom,#2193b0,#6dd5ed);
+    
+ position: fixed;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 100%; 
+ 
+ z-index: 1;
+overflow-x: hidden !important;
+transition: all 1s ease-in-out;
+
+}
+
+.nav-content.active 
+{
+    right: 0% !important;
+}
+
+ul 
+{
+    
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 100%;
+ font-size: 23px;
+ /* margin-left: 10px !important; */
+  margin: 0px !important;
+
+
+    
+
+
+ 
+}
+ul  li 
+{
+    margin-bottom: 60px;
+}
+
+
+.icons
+{
+    width: 100% !important;
+    overflow-x: hidden !important; 
+}
+
+
+
+section .container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+
+}
+
+.icons
+{
+    position: relative;
+    bottom: 100px !important;
+    font-size: 15px !important;
+    display: none !important;
+}
+
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+
+
+
+/* media query end */
